@@ -1,4 +1,3 @@
-import bookconf;
 import geometry;
 import olympiad;
 import markers;
@@ -23,7 +22,7 @@ dot(p1, F2); label(p1, "$F_2$", F2, dir(270));
 dot(p1, X);  label(p1, "$X$", X, dir(120));
 dot(p1, Y);  label(p1, "$Y$", Y, dir(Y));
 
-// -------------------- block 2 (hyperbola) --------------------
+// Hyperbola
 pair P1 = (-3,0);
 pair P2 = (3,0);
 
@@ -42,7 +41,7 @@ label(p2, "$\ell_2$", (-3.2,-3), dir(330));
 label(p2, "$a$", (4.7,0), dir(270));
 label(p2, "$b$", (0,4.7), dir(0));
 
-// -------------------- block 3 (parabola) --------------------
+// Parabola
 pair P1_par = (0,2);
 line l = line((3,0),(0,0));
 pair T = (2.8,2.8*2.8/4 + 1);
@@ -55,7 +54,6 @@ draw(p3, (-5,0)--(5,0));
 draw(p3, (0,5)--(0,-1));
 draw(p3, P1_par--T--T_);
 
-//ugly markers, ugh
 draw(p3, T--T_, StickIntervalMarker(1,2));
 draw(p3, T--P1_par, StickIntervalMarker(1,2));
 
